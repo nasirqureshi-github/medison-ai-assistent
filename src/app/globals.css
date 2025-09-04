@@ -14,13 +14,147 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #F7F7F7;
+    --foreground: #000000;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-spartan), var(--font-urbanist), var(--font-outfit), Georgia, Arial, sans-serif;
+ 
 }
+h1, button {
+  font-family: Georgia, serif;
+}
+p {
+  font-family: Arial, sans-serif;
+}
+li, h3 {
+  font-family: var(--font-urbanist), sans-serif;
+}
+.btn{
+  font-family: var(--font-spartan), sans-serif;
+}
+marquee, h2, label{
+ font-family:var(--font-outfit), sans-serif;
+}
+ 
+.text-primary{
+  color:#167363
+}
+.bg-primary{
+  background:#167363
+}
+
+
+ 
+@keyframes slideBlink {
+  0%, 15% {
+    transform: translateY(0%); opacity: 1;
+  }
+  20% { opacity: 0; }
+  
+  25%, 40% {
+    transform: translateY(-100%); opacity: 1;
+  }
+  45% { opacity: 0; }
+  
+  50%, 70% {
+    transform: translateY(-200%); opacity: 1;
+  }
+  75% { opacity: 0; }
+  
+  80%, 100% {
+    transform: translateY(0%); opacity: 1;
+  }
+}
+
+.text-carousel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  animation: slideBlink 8s linear infinite;
+}
+
+.text-carousel h1 {
+  line-height: 1;           
+  white-space: nowrap;     
+  height: 3.5rem;           
+  display: flex;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px); /* adjust height */
+  }
+}
+
+.float-animation {
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marquee-right 15s linear infinite;
+}
+
+
+
+/* 
+ @keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 15s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 15s linear infinite;
+} */
