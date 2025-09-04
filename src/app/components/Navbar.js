@@ -33,7 +33,7 @@ const Navbar = ({ onOpenModal }) => {
         <ul className="hidden md:flex text-black gap-6 text-sm font-medium opacity-70">
           {links.map((link) => (
             <li key={link.href}>
-              <Link href={link.href}>{link.label}</Link>
+              <Link href={link.href} >{link.label} </Link>
             </li>
           ))}
         </ul>

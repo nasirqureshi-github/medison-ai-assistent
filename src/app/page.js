@@ -7,14 +7,12 @@ import Healthinsight from './sections/Healthinsight'
 import Blog from './sections/Blog'
 import Testimonial from './sections/Testimonial'
 import Faqs from './sections/Faqs'
-import AuthModal from './components/Auth/AuthModal'
 
 const Home = () => {
   return (
     <div>
    
     <Hero/>
-    <AuthModal/>
     <Marquee/>
     <About/>
     <WeightlossTreatments/>

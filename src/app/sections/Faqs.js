@@ -4,7 +4,7 @@ import InputForm from '../components/Faqs/InputForm'
 
 const Faqs = () => {
   return (
-    <div id='faqs' className='my-20 mx-10 grid grid-cols-1 md:grid-cols-2 gap-4 '>
+    <div id='faqs' className='my-20 mx-4 md:mx-10 grid grid-cols-1 md:grid-cols-2 gap-4 '>
         <FAQ/>
         <InputForm/>
     </div>
