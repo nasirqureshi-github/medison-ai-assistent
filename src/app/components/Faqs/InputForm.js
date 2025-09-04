@@ -9,7 +9,7 @@ const InputForm = () => {
          <Image src={'/assets/images/qusetion.png'} width={150} height={150} alt="question"/> 
        </div>
        <h1 className='text-xl font-bold text-[#0C0C1E] text-center'>Still have a question?</h1>
-       <h2 className='text-sm text-[#0C0C1E] text-center px-0 md:px-30'>We&apos;re here to help. Send us your question and we'll get back to you shortly.</h2>
+       <h2 className='text-sm text-[#0C0C1E] text-center px-0 md:px-30'>We&apos;re here to help. Send us your question and we&apos;ll get back to you shortly.</h2>
 
        <form className="w-full max-w-md mx-auto mt-6">
   <label  className="block mb-2 text-sm font-medium text-gray-700">
