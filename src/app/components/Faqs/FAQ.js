@@ -37,7 +37,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="max-w-2xl space-y-4 font-[Arial] text-[14px]">
+    <div className="container mx-auto max-w-2xl space-y-4 font-[Arial] text-[14px]">
       {faqs.map((faq, index) => (
         <div
           key={index}

@@ -37,25 +37,26 @@ const Bmicalculator = () => {
       </p>
 
       {/* Height Input */}
+      <form onSubmit={(e)=>{calculateBMI(); e.preventDefault()}}>
       <label className="block text-xs font-medium mb-2 text-left">Height</label>
       <div className="flex gap-4 mb-4">
         <div className="relative w-1/2">
           <input
-            type="text"
+            type="number"
             value={feet}
             onChange={(e) => setFeet(e.target.value)}
-            className="w-full p-2 border rounded-2xl py-[25px] pr-10 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"/>
+            className="w-full p-2 border rounded-2xl py-[25px] pr-10 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" required/>
           <span className="absolute right-3 top-1/2 -translate-y-1/2  text-sm">
             ft
           </span>
         </div>
         <div className="relative w-1/2">
           <input
-            type="text"
+            type="number"
             value={inches}
             onChange={(e) => setInches(e.target.value)}
             className="w-full p-2 border rounded-2xl py-[25px] pr-10 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-          />
+          required/>
           <span className="absolute right-3 top-1/2 -translate-y-1/2  text-sm">
             in
           </span>
@@ -66,11 +67,11 @@ const Bmicalculator = () => {
       <label className="block text-xs font-medium mb-2 text-left">Weight</label>
       <div className="relative w-full mb-10">
         <input
-          type="text"
+          type="number"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
           className="w-full p-2 py-[25px] border rounded-2xl pr-12 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-        />
+         required/>
         <span className="absolute right-3 top-1/2 -translate-y-1/2  text-sm">
           lb
         </span>
@@ -83,6 +84,7 @@ const Bmicalculator = () => {
       >
         Calculate BMI
       </button>
+      </form>
 
       {/* Result */}
       {bmi && (

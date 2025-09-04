@@ -7,7 +7,7 @@ const AuthModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4" onClick={onClose}>
+    <div className="fixed inset-0 z-120 flex items-center justify-center bg-black/60 p-4 mt-0 lg:mt-20" onClick={onClose}>
       {/* Modal Box */}
       <div className="bg-white rounded-2xl shadow-xl w-full max-w-md"   onClick={(e) => e.stopPropagation()} >
         {/* Header */}

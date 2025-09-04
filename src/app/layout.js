@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
         className={`${spartan.variable} ${urbanist.variable} ${outfit.variable}`}
       >
      
+
        <Authlayout> {children}</Authlayout>
        
          <Footer/>

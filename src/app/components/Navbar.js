@@ -16,8 +16,8 @@ const Navbar = ({ onOpenModal }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="max-w-[1070px] w-full h-[87px] mx-auto mt-4 py-3 border border-[#4ABFAB] px-5 rounded-full bg-[rgba(255,255,255,0.30)] backdrop-blur-[4.25px] z-10 relative md:absolute left-1/2 -translate-x-1/2 top-0">
-      <div className="flex justify-between items-center">
+    <div className="md:max-w-[1070px] max-w-[350px] h-[75px] w-full md:h-[87px] my-2 md:mt-4 py-3 border border-[#4ABFAB] px-5 rounded-full bg-[rgba(255,255,255,0.30)] backdrop-blur-[4.25px] z-100 relative md:fixed left-1/2 -translate-x-1/2 top-0 md:block">
+      <div className="flex justify-between items-center h-full">
         {/* Logo */}
         <Link href="/">
           <Image
@@ -30,7 +30,7 @@ const Navbar = ({ onOpenModal }) => {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex text-black gap-6 text-sm font-medium opacity-70">
+        <ul className="hidden md:flex text-black md:gap-3 lg:gap-6 text-sm font-medium opacity-70">
           {links.map((link) => (
             <li key={link.href}>
               <Link href={link.href} >{link.label} </Link>
@@ -70,7 +70,7 @@ const Navbar = ({ onOpenModal }) => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="absolute top-[87px] left-0 w-full bg-white shadow-md rounded-b-2xl md:hidden">
+        <div className="absolute top-[82px] left-0 w-full bg-white shadow-md rounded-b-2xl md:hidden ">
           <ul className="flex flex-col gap-4 py-4 px-6 text-sm font-medium text-gray-700">
             {links.map((link) => (
               <li key={link.href}>

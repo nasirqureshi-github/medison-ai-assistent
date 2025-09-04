@@ -2,7 +2,7 @@ import Card from "../components/Hero/Card"
 
 const Hero = () => {
   return (
-    <div className="w-full md:min-h-screen md:h-[915px] h-[700px] bg-[url('/assets/images/bg-imag.jpg')] bg-cover md:bg-center bg-no-repeat relative bg-position-[center_right_-11rem] ">
+    <div className="w-full md:min-h-screen md:h-[915px] h-[700px] bg-[url('/assets/images/bg-imag.jpg')] bg-cover md:bg-center bg-no-repeat relative bg-position-[center_right_-11rem] container mx-auto ">
       <div className="absolute inset-0 flex flex-col justify-center md:items-start items-center text-white px-4 md:px-10 mt-20 md:mt-0">
         
         {/* Heading */}

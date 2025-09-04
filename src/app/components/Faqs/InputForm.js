@@ -3,7 +3,7 @@ import React from 'react'
 
 const InputForm = () => {
   return (
-    <div className='flex flex-col justify-center'>
+    <div className='  flex flex-col justify-center'>
        
        <div className='flex justify-center'>
          <Image src={'/assets/images/qusetion.png'} width={150} height={150} alt="question"/> 

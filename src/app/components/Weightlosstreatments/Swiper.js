@@ -64,7 +64,7 @@ const WeightLossSwiper = () => {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="relative w-full px-6 ">
+    <div className=" relative w-full px-6 ">
       {/* Custom Navigation */}
       <div className="absolute -top-12 right-6 flex gap-2 z-10 ">
         <button
@@ -99,7 +99,8 @@ const WeightLossSwiper = () => {
         }}
         breakpoints={{
           320: { slidesPerView: 1, spaceBetween: 6}, 
-          768: { slidesPerView: 3.3, spaceBetween: 6 },
+          768: { slidesPerView: 2.09, spaceBetween: 6 },
+          1024: { slidesPerView: 3.1, spaceBetween: 6 },
         }}
         onSlideChange={(swiper) => {
           setIsBeginning(swiper.isBeginning);

@@ -29,7 +29,7 @@ const cardsData = [
 
 const Aboutcard = () => {
   return (
- <div className="grid grid-cols-1 md:grid-cols-4 md:mx-6 mx-4 my-10 gap-6 md:gap-3">
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:mx-6 mx-4 my-10 gap-6 md:gap-3">
 {cardsData.map((card)=>{
   return(
 <div key={card.id} className="relative bg-white w-full h-[228px] py-6 pl-5 pb-5 group rounded-3xl overflow-hidden">

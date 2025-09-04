@@ -18,10 +18,10 @@ const postdata=[
 
 const Healthcard = () => {
   return (
-    <div className='grid grid-col-1 md:grid-cols-2 px-4 gap-6'>
+    <div className=' grid grid-col-1 md:grid-cols-2 px-4 gap-6'>
   {postdata.map((post)=>{
     return(
-<div key={post.title} className="bg-white rounded-3xl p-6 w-auto md:w-[614px] h-[630px] group overflow-hidden ">
+<div key={post.title} className="bg-white rounded-3xl  w-auto  h-[630px] group overflow-hidden">
   {/* Image wrapper */}
   <div className="relative w-full h-full rounded-2xl overflow-hidden transition-all duration-500 group-hover:h-[333px]">
     <Image
