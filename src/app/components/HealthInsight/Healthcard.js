@@ -21,7 +21,7 @@ const Healthcard = () => {
     <div className=' grid grid-col-1 md:grid-cols-2 px-4 gap-6'>
   {postdata.map((post)=>{
     return(
-<div key={post.title} className="bg-white rounded-3xl  w-auto  h-[630px] group overflow-hidden">
+<div key={post.title} className="bg-white rounded-3xl  w-auto  h-[630px] group overflow-hidden ">
   {/* Image wrapper */}
   <div className="relative w-full h-full rounded-2xl overflow-hidden transition-all duration-500 group-hover:h-[333px]">
     <Image
@@ -44,7 +44,7 @@ const Healthcard = () => {
   </div>
 
   {/* Below content – hidden by default, shown on hover */}
-  <div className="opacity-0 max-h-0 overflow-hidden transition-all duration-500 group-hover:opacity-100 group-hover:max-h-[400px]">
+  <div className="opacity-0 max-h-0 overflow-hidden transition-all duration-500 group-hover:opacity-100 group-hover:max-h-[400px] px-3">
     <button className="bg-[rgba(28,140,120,0.18)] px-6 py-3 rounded-full font-medium mt-4 cursor-pointer">
       {post.btntext}
     </button>
