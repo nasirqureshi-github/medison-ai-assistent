@@ -30,7 +30,7 @@ export async function POST(req) {
 
     if (data.error) {
       return new Response(
-        JSON.stringify({ reply: `⚠️ Error: ${data.error.message}` }),
+        JSON.stringify({ reply: `⚠️ Error: the Medison AI request limit has been reached. Please try again later.` }),
         { status: 400 }
       );
     }

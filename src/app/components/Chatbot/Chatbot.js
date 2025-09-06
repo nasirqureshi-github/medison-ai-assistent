@@ -89,6 +89,7 @@ export default function Chatbot() {
                 }`}
               >
                 {msg.text}
+                
               </div>
             ))}
 
