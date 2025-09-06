@@ -7,12 +7,14 @@ import Healthinsight from './sections/Healthinsight'
 import Blog from './sections/Blog'
 import Testimonial from './sections/Testimonial'
 import Faqs from './sections/Faqs'
+import Chatbot from './components/Chatbot/Chatbot'
 
 const Home = () => {
   return (
     <div>
    
     <Hero/>
+    <Chatbot/>
     <Marquee/>
     <About/>
     <WeightlossTreatments/>
