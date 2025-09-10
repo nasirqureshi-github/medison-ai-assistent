@@ -130,3 +130,29 @@ marquee, h2, label{
   animation: marquee-right 15s linear infinite;
 }
 
+
+/* globals.css */
+
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;             /* scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;      /* track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #167363;      /* scrollbar color */
+  border-radius: 10px;      /* round edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #115b4f;      /* color on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: #167363 #f1f1f1; /* thumb color track color */
+}
