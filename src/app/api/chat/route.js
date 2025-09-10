@@ -11,7 +11,7 @@ export async function POST(req) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           contents: [
-            // Website context
+            // Website context file
             {
               role: "user",
               parts: [{ text: MEDISON_CONTEXT} ]
