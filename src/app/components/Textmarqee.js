@@ -14,7 +14,7 @@ const murqeeText=[
 
 const Marquee = () => {
   return (
-    <div className="bg-[rgba(28,140,120,0.17)] overflow-hidden flex md:mt-20 mt-40 py-3 select-none container mx-auto" >
+    <div className="bg-[rgba(28,140,120,0.17)] overflow-hidden flex md:mt-20 mt-40 py-3 select-none 2xl:container 2xl:mx-auto" >
     <marquee behavior="alternate" scrollamount="10">
     <div className="flex gap-14" >
     {murqeeText.map((murqee)=>{

@@ -4,7 +4,7 @@ import TestimonialRight from '../components/Testimonial/TestimonalRight'
 
 const Testimonial = () => {
   return (
-    <div className='container mx-auto mt-25'>
+    <div className='2xl:container 2xl:mx-auto mt-25'>
     <div className='text-center'>
         <h3 className='text-[18px] font-bold text-[#1C8C78]'>Testimonials</h3>
         <h1 className='text-[32px] font-bold text-[#0C0C1E]'>Real Stories. Real Results.</h1>

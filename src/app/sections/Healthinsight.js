@@ -3,7 +3,7 @@ import Healthcard from '../components/HealthInsight/Healthcard'
 
 const Healthinsight = () => {
   return (
-    <div className=' mt-25 px-4 container mx-auto' id='Anti-AgingTreatments'>
+    <div className=' mt-25 px-4 2xl:container 2xl:mx-auto' id='Anti-AgingTreatments'>
     <div className='text-center'>
       <h1 className='text-[32px] font-bold'>Latest Health Insight</h1>
       <h2 className='text-[18px] text-[#717171]'>Stay informed with the latest research, tips and success stories form our medical experts.</h2>

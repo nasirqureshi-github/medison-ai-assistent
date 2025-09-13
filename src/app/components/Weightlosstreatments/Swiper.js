@@ -100,7 +100,8 @@ const WeightLossSwiper = () => {
         breakpoints={{
           320: { slidesPerView: 1, spaceBetween: 6}, 
           768: { slidesPerView: 2.09, spaceBetween: 6 },
-          1024: { slidesPerView: 3.1, spaceBetween: 6 },
+          1024: { slidesPerView: 2.8, spaceBetween: 6 },
+          1200: { slidesPerView: 3.2, spaceBetween: 6 },
         }}
         onSlideChange={(swiper) => {
           setIsBeginning(swiper.isBeginning);

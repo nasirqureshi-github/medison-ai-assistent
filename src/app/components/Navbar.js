@@ -16,7 +16,7 @@ const Navbar = ({ onOpenModal }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="md:max-w-[1070px] max-w-[350px] h-[75px] w-full md:h-[87px] my-2 md:mt-4 py-3 border border-[#4ABFAB] px-5 rounded-full bg-[rgba(255,255,255,0.30)] backdrop-blur-[4.25px] z-100 relative md:fixed left-1/2 -translate-x-1/2 top-0 md:block">
+    <div className="md:max-w-[750px] lg:max-w-[900px] max-w-[350px] h-[75px] w-full md:h-[87px] my-2 md:mt-4 py-3 border border-[#4ABFAB] px-5 rounded-full bg-[rgba(255,255,255,0.30)] backdrop-blur-[4.25px] z-100 relative md:fixed left-1/2 -translate-x-1/2 top-0 md:block">
       <div className="flex justify-between items-center h-full">
         {/* Logo */}
         <Link href="/">
@@ -25,7 +25,7 @@ const Navbar = ({ onOpenModal }) => {
             width={62}
             height={62}
             alt="Medsione"
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer  lg:w-[62px] lg:h-[62px]  md:w-[40px] md:h-[40px]"
           />
         </Link>
 
